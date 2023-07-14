@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div > p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Child Selector</h2>
+    <p>Paragraph 1 in the div.</p>
+
+<!-- 
+    <p>
+      The child selector (>) selects all elements that are the children of a
+      specified element.
+    </p> -->
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <div>
+        <p> child :: hello para using p tag</p>
+        <div>
+            <p> sub-child :: hello para using p tag</p>
+            <section>
+                <!-- not Child but Descendant -->
+                <p>Paragraph 3 in the div (inside a section element).</p>
+                <section>
+                    <!-- not Child but Descendant -->
+                    <p>Paragraph 3 in the div (inside a section element).</p>
+                  </section>
+                  <section>
+                    <!-- not Child but Descendant -->
+                    <p>Paragraph 3 in the div (inside a section element).</p>
+                  </section>
+                  <section>
+                    <!-- not Child but Descendant -->
+                    <p>Paragraph 3 in the div (inside a section element).</p>
+                  </section>
+              </section>
+          </div>
+      </div>
+      <section>
+        <!-- not Child but Descendant -->
+        <p>Paragraph 3 in the div (inside a section element).</p>
+      </section>
+      <p>Paragraph 9 in the div.</p>
+
+      <p>Paragraph 4 in the div.</p>
+    </div>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+  </body>
+</html>
